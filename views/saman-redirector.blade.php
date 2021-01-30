@@ -8,7 +8,7 @@
             form.setAttribute("target", "_self");
 
             var params = {
-                Token: '[{{$token}}]',
+                Token: '{{$token}}',
                 GetMethod: true
             };
 
