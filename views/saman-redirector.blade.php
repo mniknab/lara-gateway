@@ -1,16 +1,15 @@
 <html>
     <body>
         <script>
-        	var form = document.createElement("form");
-        	form.setAttribute("method", "POST");
-        	form.setAttribute("action", "https://sep.shaparak.ir/Payment.aspx");
-        	form.setAttribute("target", "_self");
+
+            var form = document.createElement("form");
+            form.setAttribute("method", "POST");
+            form.setAttribute("action", "https://sep.shaparak.ir/MobilePG/MobilePayment");
+            form.setAttribute("target", "_self");
 
             var params = {
-                Amount: '{{$amount}}',
-                MID: '{{$merchant}}',
-                ResNum: '{{$resNum}}',
-                RedirectURL: '{{$callBackUrl}}',
+                Token: '[{{$token}}]',
+                GetMethod: true
             };
 
             for(var key in params){
@@ -23,9 +22,9 @@
             }
 
 
-        	document.body.appendChild(form);
-        	form.submit();
-        	document.body.removeChild(form);
+            document.body.appendChild(form);
+            // form.submit();
+            // document.body.removeChild(form);
         </script>
     </body>
 </html>
