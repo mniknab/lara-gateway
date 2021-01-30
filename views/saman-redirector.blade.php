@@ -4,7 +4,7 @@
 
             var form = document.createElement("form");
             form.setAttribute("method", "POST");
-            form.setAttribute("action", "https://sep.shaparak.ir/MobilePG/MobilePayment");
+            form.setAttribute("action", "https://sep.shaparak.ir/OnlinePG/OnlinePG");
             form.setAttribute("target", "_self");
 
             var params = {
