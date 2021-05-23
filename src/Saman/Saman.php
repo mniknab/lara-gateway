@@ -2,7 +2,7 @@
 
 namespace Larabookir\Gateway\Saman;
 
-use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Request;
 use Larabookir\Gateway\PortAbstract;
 use Larabookir\Gateway\PortInterface;
 use SoapClient;
@@ -119,11 +119,11 @@ class Saman extends PortAbstract implements PortInterface {
 	 * @throws SamanException
 	 */
 	protected function userPayment() {
-		$this->refId = Input::get('RefNum');
-		$this->trackingCode = Input::get('‫‪TRACENO‬‬');
-		$this->cardNumber = Input::get('‫‪SecurePan‬‬');
-		$payRequestRes = Input::get('State');
-		$payRequestResCode = Input::get('StateCode');
+		$this->refId = Request::get('RefNum');
+		$this->trackingCode = Request::get('‫‪TRACENO‬‬');
+		$this->cardNumber = Request::get('‫‪SecurePan‬‬');
+		$payRequestRes = Request::get('State');
+		$payRequestResCode = Request::get('StateCode');
 
 		if ($payRequestRes == 'OK') {
 			return true;
