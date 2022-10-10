@@ -1,7 +1,7 @@
 {
-    "name": "larabook/gateway",
-    "homepage": "https://github.com/larabook/gateway",
-    "description": "A Laravel package for connecting to all Iraninan payment  gateways",
+    "name": "mniknab/larabook-gateway",
+    "homepage": "https://github.com/mniknab/larabook-gateway",
+    "description": "A Laravel package for connecting to all Iraninan payment gateways (Forked from larabook/gateway",
     "keywords": ["laravel", "iran", "payment", "gateway", "port", "bank", "pay", "mellat", "saman", "pasargad", "parsian", "sadad", "meli", "payline", "jahanpay", "zarinpal", "iranian-banks", "persian-banks", "pardakht", "dargah", "shaparak", "poolport", "ipay"],
     "license": "MIT",
     "authors": [{
@@ -12,7 +12,6 @@
             "name": "MohammadReza Honarkhah",
             "email": "m.honar@gmail.com"
         },
-
         {
             "name": "Mohammad Niknab",
             "email": "MohammadNiknab@gmail.com"
